@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/ad26818d844de4534fd78bb03028ca79?family=Shopify+Sans+Web+Medium+Regular"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/zurich-cn-bt" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+   
+    <title>Slider</title>
+  </head>
+  <body>
+    <header class="h-lvh relative">
+      <nav class="top-0 sticky z-20 bg-pramiray-color">
+        <div
+          class="relative grid grid-cols-4 text-white items-center justify-between sm:px-7 px-5 nav gap-x-2"
+        >
+          <div
+            class="icon-list lg:hidden col-span-1 xs:text-lg sm:text-xl text-base me-auto"
+          >
+            <button class="inline-block sm:mx-2 mx-1">
+              <i class="fa-solid fa-list open-list"></i>
+            </button>
+            <button class="inline-block sm:mx-2 mx-1">
+              <i
+                class="fa-solid fa-magnifying-glass cursor-pointer searchicon2"
+              ></i>
+            </button>
+          </div>
+          <div
+            class="logo col-span-2 lg:col-span-1 py-5 lg:p-2 flex justify-center md:justify-start"
+          >
+            <img
+              src="./images/logo-focal.avif"
+              alt="logo-focal"
+              class="w-24 block"
+            />
+          </div>
+
+          <div
+            class="links col-span-2 mx-auto font-primary-font font-medium text-link-font hidden lg:grid"
+          >
+            <ul class="flex gap-x-6 p-6 navbar-ul">
+              <li
+                class="before:content-[''] before:w-0 before:h-[1px] before:bg-white before:absolute relative before:bottom-0 p-1 before:transition-all before:duration-700 before:left-0"
+              >
+                <a href="#"> Shop by Category</a>
+              </li>
+              <li
+                class="before:content-[''] before:w-0 before:h-[1px] before:bg-white before:absolute relative before:bottom-0 p-1 before:transition-all before:duration-700 before:left-0"
+              >
+                <a href="#">Shop by Device</a>
+              </li>
+              <li
+                class="before:content-[''] before:w-0 before:h-[1px] before:bg-white before:absolute relative before:bottom-0 p-1 before:transition-all before:duration-700 before:left-0"
+              >
+                <a href="#">Collections</a>
+              </li>
+              <li
+                class="before:content-[''] before:w-0 before:h-[1px] before:bg-white before:absolute relative before:bottom-0 p-1 before:transition-all before:duration-700 before:left-0"
+              >
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="icons ms-auto me-2 grid-cols-1 xs:text-lg md:text-xl text-base"
+          >
+            <button class="mx-3 hidden md:inline-block">
+              <i class="fa-regular fa-envelope cursor-pointer text-xl"></i>
+            </button>
+            <button class="lg:inline-block mx-3 hidden">
+              <i
+                class="fa-solid fa-magnifying-glass cursor-pointer searchicon1"
+              ></i>
+            </button>
+            <button class="md:inline-block hidden mx-3">
+              <i class="fa-regular fa-user cursor-pointer"></i>
+            </button>
+            <button class="inline-block mx-3 relative">
+              <i class="fa-solid fa-bag-shopping cursor-pointer"></i>
+              <div
+                class="h-5 w-5 absolute rounded-full bg-neutral-50 -top-1 -right-3 flex justify-center items-center text-black text-xs"
+              >
+                <span>0</span>
+              </div>
+            </button>
+          </div>
+          <div
+            class="content-drop absolute z-20 left-0 right-0 top-full text-neutral-700 bg-white opacity-0 transition-opacity duration-200 ease-in-out"
+          >
+            <div class="link-content p-8 hidden font-text-font">
+              <div class="w-3/4 grid mx-auto grid-cols-5 gap-3">
+                <div class="col-span-1 p-2">
+                  <h5 class="text-xs font-bold my-3">PROTECT & CARRY</h5>
+                  <ul class="text-sm font-semibold flex flex-col gap-y-3">
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone Cases</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">AirPods Cases</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Sleeves</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="">Accessories</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-span-1 p-2">
+                  <h5 class="font-text-font text-xs font-bold my-3">CABLES</h5>
+                  <ul class="text-sm font-semibold flex flex-col gap-y-3">
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">USB-A</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">USB-C</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Lightning</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Apple Watch</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">View All</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-span-3">
+                  <div class="cards grid grid-cols-3 gap-5">
+                    <div class="card">
+                      <a href="#">
+                        <div class="img overflow-hidden">
+                          <img
+                            src="./images/iphone-cases.webp"
+                            alt="iphone-cases"
+                            class="transition-transform duration-700"
+                          />
+                        </div>
+                        <div
+                          class="content text-center font-semibold text-sm my-2"
+                        >
+                          <h5 class="my-2">IPHONE CASES</h5>
+                          <p>Give your iPhone one-of-a-kind character</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card">
+                      <a href="#">
+                        <div class="img overflow-hidden">
+                          <img
+                            src="./images/wireless-chargers.webp"
+                            alt="iphone-cases"
+                            class="transition-transform duration-700"
+                          />
+                        </div>
+                        <div
+                          class="content text-center my-2 text-sm font-semibold"
+                        >
+                          <h5 class="my-2">CHARGERS</h5>
+                          <p>Solutions to power all your tech</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card">
+                      <a href="#">
+                        <div class="img overflow-hidden">
+                          <img
+                            src="./images/bundles.jpg"
+                            alt="iphone-cases"
+                            class="transition-transform duration-700"
+                          />
+                        </div>
+                        <div
+                          class="content text-center text-sm my-2 font-semibold"
+                        >
+                          <h5 class="my-2">BUNDLES</h5>
+                          <p>Our essentials at a reduced price</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link-content p-8 hidden font-text-font">
+              <div
+                class="grid grid-cols-5 gap-2 max-h-80 overflow-y-scroll w-4/5 mx-auto px-5 py-2 font-text-font"
+              >
+                <div>
+                  <h5 class="text-xs font-bold my-3">IPHONE</h5>
+                  <ul class="text-sm font-semibold flex flex-col gap-y-3">
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone 12 Mini</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone 12</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone 12 Pro</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone 12 Pro Max</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone 11</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone 11 Pro</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone 11 Pro Max</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone XS</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPhone XS Max</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="text-xs font-bold my-3">MACBOOK</h5>
+                  <ul class="text-sm font-semibold flex flex-col gap-y-3">
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">12" MacBooks</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">13" MacBooks</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">14" MacBooks</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">15" MacBooks</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="text-xs font-bold my-3">IPAD</h5>
+                  <ul class="text-sm font-semibold flex flex-col gap-y-3">
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPad Pro 11"</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPad Pro 12.9"</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPad (7th & 8th Gen)</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">iPad Air (4th Gen)</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="text-xs font-bold my-3">AIRPODS</h5>
+                  <ul class="text-sm font-semibold flex flex-col gap-y-3">
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">AirPods Pro</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">AirPods Gen 1 & 2</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="card w-full">
+                    <a href="#">
+                      <div class="img overflow-hidden">
+                        <img
+                          src="./images/iphone-cases.webp"
+                          alt="iphone-cases"
+                          class="transition-transform duration-700"
+                        />
+                      </div>
+                      <div class="content text-center my-2">
+                        <h5 class="font-semibold text-sm my-2">IPHONE CASES</h5>
+                        <p class="font-semibold text-sm">
+                          Give your iPhone one-of-a-kind character
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link-content p-8 hidden font-text-font">
+              <div class="w-5/6 grid mx-auto grid-cols-5 gap-3">
+                <div class="col-span-1 p-2">
+                  <h5 class="text-xs font-bold my-3">EXPLORE</h5>
+                  <ul class="text-sm font-semibold flex flex-col gap-y-3">
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">The Heritage Collection</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Sage Collection</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Work From Home</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Stow Collection</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Classic Leather Collection</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Power Delivery Collectionn</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-span-1 p-2">
+                  <h5 class="font-text-font text-xs font-bold my-3">
+                    COLLABORATIONS
+                  </h5>
+                  <ul class="text-sm font-semibold flex flex-col gap-y-3">
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Maison Kitsuné</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">La Boîte Concept</a>
+                    </li>
+                    <li
+                      class="hover:text-neutral-500 transition-colors duration-300"
+                    >
+                      <a href="#">Tom Dixon</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-span-3">
+                  <div class="cards grid grid-cols-3 gap-5 p-5">
+                    <div class="card">
+                      <a href="#">
+                        <div class="img overflow-hidden">
+                          <img
+                            src="./images/heritage-collection.webp"
+                            alt="iphone-cases"
+                            class="transition-transform duration-700"
+                          />
+                        </div>
+                        <div
+                          class="content text-center font-semibold text-sm my-2"
+                        >
+                          <h5 class="my-2">THE HERITAGE COLLECTION</h5>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card">
+                      <a href="#">
+                        <div class="img overflow-hidden">
+                          <img
+                            src="./images/la-boite-concept.webp"
+                            alt="iphone-cases"
+                            class="transition-transform duration-700"
+                          />
+                        </div>
+                        <div
+                          class="content text-center my-2 text-sm font-semibold"
+                        >
+                          <h5 class="my-2">LA BOÎTE CONCEPT</h5>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card">
+                      <a href="#">
+                        <div class="img overflow-hidden">
+                          <img
+                            src="./images/tom-dixon.webp"
+                            alt="iphone-cases"
+                            class="transition-transform duration-700"
+                          />
+                        </div>
+                        <div
+                          class="content text-center text-sm my-2 font-semibold"
+                        >
+                          <h5 class="my-2">TOM DIXON</h5>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </nav>
+      <div
+        class="sidebar fixed xxs:w-[88%] xs:w-[65%] sm:w-1/2 z-40 bottom-0 top-0 bg-white block lg:hidden transition-all p-2"
+      >
+        <div
+          class="close text-xl sticky top-0 p-4 cursor-pointer left-0 right-0 z-20 bg-white"
+        >
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="content-list overflow-y-auto h-5/6 text-neutral-800">
+          <div class="list1 p-4">
+            <div
+              class="head border-b border-neutral-300 p-2 flex justify-between cursor-pointer text-xl font-bold items-baseline"
+            >
+              <h2>SHOP BY CATEGORY</h2>
+              <div class="icon text-sm">
+                <i class="fa-solid fa-plus plus"></i>
+              </div>
+            </div>
+            <div class="list-content ps-4 py-1">
+              <div class="list-item1">
+                <div
+                  class="list-item-head flex p-2 justify-between font-medium cursor-pointer"
+                >
+                  <h3>Protect & Carry</h3>
+                  <div class="icon text-sm">
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                </div>
+                <div
+                  class="list-item-content hidden px-4 my-3 border-l border-neutral-300"
+                >
+                  <ul class="flex flex-col gap-y-4 font-medium">
+                    <li><a href="#">iPhone Cases</a></li>
+                    <li><a href="#">AirPods Cases</a></li>
+                    <li><a href="#">Sleeves</a></li>
+                    <li><a href="#">Accessories</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-item2">
+                <div
+                  class="list-item-head flex p-2 justify-between font-medium cursor-pointer"
+                >
+                  <h3>Cables</h3>
+                  <div class="icon text-sm">
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                </div>
+                <div
+                  class="list-item-content px-4 my-3 hidden border-l border-neutral-300"
+                >
+                  <ul class="flex flex-col gap-y-4 font-medium">
+                    <li><a href="#">USB-A</a></li>
+                    <li><a href="#">USB-C</a></li>
+                    <li><a href="#">Lightning</a></li>
+                    <li><a href="#">Apple Watch</a></li>
+                    <li><a href="#">View All</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-item3">
+                <div class="list-item-content px-4 my-3 grid grid-cols-3 gap-4">
+                  <a href="#">
+                    <div class="w-full flex flex-col gap-y-2">
+                      <div class="imge w-full">
+                        <img
+                          src="./images/iphone-cases.webp"
+                          alt="iphone-cases"
+                          class="w-full"
+                        />
+                      </div>
+                      <div class="text-center flex flex-col gap-y-2">
+                        <h4 class="font-semibold text-sm">iphone-cases</h4>
+                        <p class="text-xs">
+                          Give your iPhone one-of-a-kind character
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="w-full flex flex-col gap-y-2">
+                      <div class="imge w-full">
+                        <img
+                          src="./images/wireless-chargers.webp"
+                          alt="iphone-cases"
+                          class="w-full"
+                        />
+                      </div>
+                      <div class="text-center flex flex-col gap-y-2 text-xs">
+                        <h4 class="font-bold">CHARGERS</h4>
+                        <p>Solutions to power all your tech</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="w-full flex flex-col gap-y-2">
+                      <div class="imge w-full">
+                        <img
+                          src="./images/bundles.jpg"
+                          alt="iphone-cases"
+                          class="w-full"
+                        />
+                      </div>
+                      <div class="text-center text-xs flex flex-col gap-y-2">
+                        <h4 class="font-bold">BUNDLES</h4>
+                        <p>Give your iPhone one-of-a-kind character</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list2 p-4">
+            <div
+              class="head border-b border-neutral-300 p-2 flex justify-between cursor-pointer text-xl font-bold items-baseline"
+            >
+              <h2>SHOP BY DEVICE</h2>
+              <div class="icon text-sm">
+                <i class="fa-solid fa-plus plus"></i>
+              </div>
+            </div>
+            <div class="list-content ps-4 py-1">
+              <div class="list-item1">
+                <div
+                  class="list-item-head flex p-2 justify-between font-medium cursor-pointer"
+                >
+                  <h3>iPhone</h3>
+                  <div class="icon text-sm">
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                </div>
+                <div
+                  class="list-item-content hidden px-4 my-3 border-l border-neutral-300"
+                >
+                  <ul class="flex flex-col gap-y-4 font-medium">
+                    <li><a href="#">iPhone 12 Mini</a></li>
+                    <li><a href="#">iPhone 12</a></li>
+                    <li><a href="#">iPhone 12 Pro</a></li>
+                    <li><a href="#">iPhone 12 Pro Max</a></li>
+                    <li><a href="#">iPhone 11</a></li>
+                    <li><a href="#">iPhone 11 Pro</a></li>
+                    <li><a href="#">iPhone 11 Pro Max</a></li>
+                    <li><a href="#">iPhone XS</a></li>
+                    <li><a href="#">iPhone XS Max</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-item2">
+                <div
+                  class="list-item-head flex p-2 justify-between font-medium cursor-pointer"
+                >
+                  <h3>MacBook</h3>
+                  <div class="icon text-sm">
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                </div>
+                <div
+                  class="list-item-content px-4 my-3 hidden border-l border-neutral-300"
+                >
+                  <ul class="flex flex-col gap-y-4 font-medium">
+                    <li><a href="#">12" MacBooks</a></li>
+                    <li><a href="#">13" MacBooks</a></li>
+                    <li><a href="#">15" MacBooks</a></li>
+                    <li><a href="#">16" MacBooks</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-item3">
+                <div
+                  class="list-item-head flex p-2 justify-between font-medium cursor-pointer"
+                >
+                  <h3>iPad</h3>
+                  <div class="icon text-sm">
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                </div>
+                <div
+                  class="list-item-content px-4 my-3 hidden border-l border-neutral-300"
+                >
+                  <ul class="flex flex-col gap-y-4 font-medium">
+                    <li><a href="#">iPad Pro 11"</a></li>
+                    <li><a href="#">iPad Pro 12.9"</a></li>
+                    <li><a href="#">iPad (7th & 8th Gen)</a></li>
+                    <li><a href="#">iPad Air (4th Gen)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-item4">
+                <div
+                  class="list-item-head flex p-2 justify-between font-medium cursor-pointer"
+                >
+                  <h3>AirPods</h3>
+                  <div class="icon text-sm">
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                </div>
+                <div
+                  class="list-item-content px-4 my-3 hidden border-l border-neutral-300"
+                >
+                  <ul class="flex flex-col gap-y-4 font-medium">
+                    <li><a href="#">AirPods Pro</a></li>
+                    <li><a href="#">AirPods Gen 1 & 2</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-item5">
+                <div class="list-item-content px-4 my-4 grid grid-cols-2 gap-4">
+                  <a href="#">
+                    <div class="w-full flex flex-col gap-y-2">
+                      <div class="imge w-full">
+                        <img
+                          src="./images/iphones.webp"
+                          alt="iphone-cases"
+                          class="w-full"
+                        />
+                      </div>
+                      <div class="text-center flex flex-col gap-y-2">
+                        <h4 class="font-semibold text-sm">IPHONE</h4>
+                        <p class="text-xs">
+                          Explore all iPhone products, from cases to accessories
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list3 p-4">
+            <div
+              class="head border-b border-neutral-300 p-2 flex justify-between cursor-pointer text-xl font-bold items-baseline"
+            >
+              <h2>COLLECTIONS</h2>
+              <div class="icon text-sm">
+                <i class="fa-solid fa-plus plus"></i>
+              </div>
+            </div>
+            <div class="list-content ps-4 py-1">
+              <div class="list-item1">
+                <div
+                  class="list-item-head flex p-2 justify-between font-medium cursor-pointer"
+                >
+                  <h3>Explore</h3>
+                  <div class="icon text-sm">
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                </div>
+                <div
+                  class="list-item-content hidden px-4 my-3 border-l border-neutral-300"
+                >
+                  <ul class="flex flex-col gap-y-4 font-medium">
+                    <li><a href="#">The Heritage Collection</a></li>
+                    <li><a href="#">Sage Collection</a></li>
+                    <li><a href="#">Work From Home</a></li>
+                    <li><a href="#">Stow Collection</a></li>
+                    <li><a href="#">Classic Leather Collection</a></li>
+                    <li><a href="#">Power Delivery Collection</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-item2">
+                <div
+                  class="list-item-head flex p-2 justify-between font-medium cursor-pointer"
+                >
+                  <h3>Collaborations</h3>
+                  <div class="icon text-sm">
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                </div>
+                <div
+                  class="list-item-content px-4 my-3 hidden border-l border-neutral-300"
+                >
+                  <ul class="flex flex-col gap-y-4 font-medium">
+                    <li><a href="#">Maison Kitsuné</a></li>
+                    <li><a href="#">La Boîte Concept</a></li>
+                    <li><a href="#">Tom Dixon</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-item3">
+                <div class="list-item-content px-2 my-3 grid grid-cols-3 gap-4">
+                  <a href="#">
+                    <div class="w-full flex flex-col gap-y-2">
+                      <div class="imge w-full">
+                        <img
+                          src="./images/heritage-collection.webp"
+                          alt="iphone-cases"
+                          class="w-full"
+                        />
+                      </div>
+                      <div class="text-center flex flex-col gap-y-2">
+                        <h4 class="font-bold text-xs">
+                          THE HERITAGE COLLECTION
+                        </h4>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="w-full flex flex-col gap-y-2">
+                      <div class="imge w-full">
+                        <img
+                          src="./images/la-boite-concept.webp"
+                          alt="iphone-cases"
+                          class="w-full"
+                        />
+                      </div>
+                      <div class="text-center flex flex-col gap-y-2 text-xs">
+                        <h4 class="font-bold">LA BOÎTE CONCEPT</h4>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="w-full flex flex-col gap-y-2">
+                      <div class="imge w-full">
+                        <img
+                          src="./images/tom-dixon.webp"
+                          alt="iphone-cases"
+                          class="w-full"
+                        />
+                      </div>
+                      <div class="text-center text-xs flex flex-col gap-y-2">
+                        <h4 class="font-bold">TOM DIXON</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list4 p-4">
+            <div
+              class="head border-b border-neutral-300 p-2 flex justify-between cursor-pointer text-xl font-bold items-baseline"
+            >
+              <h2>MORE</h2>
+              <div class="icon text-sm">
+                <i class="fa-solid fa-plus plus"></i>
+              </div>
+            </div>
+            <div class="list-content ps-4 py-1">
+              <div class="list-item1">
+                <div class="list-item-head my-2">
+                  <ul class="flex flex-col gap-y-4 justify-between font-medium">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer sticky bottom-0 px-6 py-2 bg-white">
+          <a href="# text-lg">
+            <i class="fa-regular fa-user inline-block me-4"></i>
+            <span class="font-medium">Accounts</span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute top-0 left-0 bottom-0 right-0 bg-black opacity-10 z-40 hidden fitter"
+      ></div>
+      <div
+        class="search-bar fixed z-40 top-0 xss:w-11/12 xs:w-5/6 sm:w-2/5 md:w-1/3 bottom-0 bg-white transition-all"
+      >
+        <div
+          class="search px-3 py-4 flex gap-2 items-baseline border-y border-neutral-300 rounded-sm"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass cursor-pointer text-neutral-600"
+          ></i>
+          <input
+            type="text"
+            name=""
+            id=""
+            class="block w-5/6 border-none outline-none p-2 placeholder:text-neutral-500 placeholder:font-medium"
+            placeholder="What Are you looking for?"
+          />
+          <i class="fa-solid fa-xmark cursor-pointer text-xl close"></i>
+        </div>
+        <div
+          class="px-10 py-2 font-text-font text-neutral-700 text-link-font flex flex-col gap-y-8"
+        >
+          <div>
+            <h5 class="font-bold text-sm my-4">POPULAR</h5>
+            <ul class="flex gap-y-3 font-semibold flex-col">
+              <li class="transition-colors duration-500 hover:text-neutral-500">
+                <a href="#">iPhone Cases</a>
+              </li>
+              <li class="transition-colors duration-500 hover:text-neutral-500">
+                <a href="#">The Heritage Collection</a>
+              </li>
+              <li class="transition-colors duration-500 hover:text-neutral-500">
+                <a href="#">La Boîte Concept</a>
+              </li>
+              <li class="transition-colors duration-500 hover:text-neutral-500">
+                <a href="#">Maison Kitsuné</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-5">
+            <h5 class="font-bold text-sm my-4">INFORMATION</h5>
+            <ul class="flex gap-y-3 font-semibold flex-col">
+              <li class="transition-colors duration-500 hover:text-neutral-500">
+                <a href="#">Our Story</a>
+              </li>
+              <li class="transition-colors duration-500 hover:text-neutral-500">
+                <a href="#">Contact</a>
+              </li>
+              <li class="transition-colors duration-500 hover:text-neutral-500">
+                <a href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="email absolute z-50 top-1/4 transform -tranlate-y-1/3 -translate-x-1/2 left-1/2 w-1/3 hidden justify-center items-center"
+      >
+        <div
+          class="bg-white email-card w-full py-16 px-6 text-center relative overflow-y-scroll flex flex-col gap-y-5 h-96 transform scale-0 opacity-0 transition-all duration-500"
+        >
+          <i
+            class="fa-solid fa-xmark fixed right-4 top-4 text-lg cloe-email cursor-pointer"
+          ></i>
+          <h3 class="text-2xl font-medium">GET 10% OFF</h3>
+          <p class="text-sm text-neutral-700 w-1/2 mx-auto">
+            Promotions, new products and sales. Directly to your inbox.
+          </p>
+          <div class="relative my-4">
+            <input type="text" id="floating_outlined" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+            <label for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Your e-mail</label>
+        </div>
+          <button
+            class="w-full p-2 rounded-sm bg-blue-600 text-lg text-white mb-2"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <div
+        class="bag-slide fixed right-0 bottom-0 top-0 xss:w-11/12 xs:w-5/6 sm:w-2/5 md:w-1/3  bg-white z-40 transition-all "
+      >
+        <div class="head-bag flex justify-between items-baseline py-5 px-3 border-y border-neutral-300">
+          <div class="text-xl">
+            <i class="fa-solid fa-bag-shopping cursor-pointer me-2"></i>
+            <span class="font-medium ">CART</span>
+          </div>
+          <i class="fa-solid fa-xmark text-xl cursor-pointer  close-cart"></i>
+        </div>
+        <div class="body h-5/6 flex justify-center items-center px-2">
+          <div class="w-3/4 mx-auto text-center text-neutral-700 flex flex-col gap-y-3">
+         <p >your cart is Empty</p>
+         <button class=" relative   after:content-[''] after:absolute after:bg-black after:opacity-5 after:bottom-0 overflow-hidden after:left-0 after:right-0 after:top-0 inline-block me-2 after:transform after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-500 w-5/6 mx-auto bg-blue-600 text-white px-3 py-4  rounded-sm text-xs font-bold"> START SHOPPING</button>
+        </div>
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="swiper text-neutral-100">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div
+                class="silde1-content w-full h-full cursor-pointer flex flex-col justify-center md:block"
+              >
+                <div
+                  class="md:w-4/5 xl:w-1/2 lg:w-2/3 w-full md:p-20 xs:p-16 xxs:py-20 xxs:px-5 flex flex-col gap-10 lg:gap-14 sm:w-11/12"
+                >
+                  <p class="text-xs font-semibold font-text-font">
+                    premium collection
+                  </p>
+                  <h1
+                    class="xxs:text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold leading-tight"
+                  >
+                    THE HERITAGE COLLECTION
+                  </h1>
+                  <div class="font-medium text-neutral-900 mb-8 flex gap-x-4">
+                    <button
+                      class="sm:w-1/3 w-1/2 p-3 bg-secoundary-color relative after:content-[''] after:absolute after:bg-black after:opacity-10 after:bottom-0 overflow-hidden after:left-0 after:right-0 after:top-0 inline-block me-2 after:transform after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-500"
+                    >
+                      LEARN MORE
+                    </button>
+                    <button
+                      class="sm:w-1/3 w-1/2 p-3 bg-secoundary-color relative after:content-[''] after:absolute after:bg-black after:opacity-10 after:bottom-0 overflow-hidden after:left-0 after:right-0 after:top-0 inline-block me-2 after:transform after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-500"
+                    >
+                      SHOP
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide2 relative w-full h-full cursor-pointer">
+                <div class="flex w-full h-full">
+                  <div class="slide2-1 h-full lg:w-1/2 w-full"></div>
+                  <div class="slide2-2 h-full w-1/2 hidden lg:block"></div>
+                </div>
+                <div
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center md:w-4/5 xl:w-1/2 lg:w-3/5 w-full md:p-20 xxs:p-5 xs:p-10 sm:p-10 gap-10 flex flex-col"
+                >
+                  <p class="text-xs font-semibold font-text-font">MEET THE</p>
+                  <h1
+                    class="xxs:text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold leading-tight text-neutral-100"
+                  >
+                    SAGE COLLECTION
+                  </h1>
+                  <div class="font-medium text-neutral-900 mb-8">
+                    <button
+                      class="sm:w-1/3 w-1/2 p-3 bg-secoundary-color relative after:content-[''] after:absolute after:bg-black after:opacity-10 after:bottom-0 overflow-hidden after:left-0 after:right-0 after:top-0 inline-block me-2 after:transform after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-500"
+                    >
+                      LEARN MORE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="silde3 w-full h-full cursor-pointer flex flex-col justify-center items-center md:block"
+              >
+                <div
+                  class="md:w-4/5 xl:w-1/2 lg:w-2/3 w-full md:p-20 xs:p-16 sm:p-10 flex flex-col xxs:py-20 xxs:px-5 gap-10 sm:w-11/12"
+                >
+                  <p class="text-xs font-semibold font-text-font">
+                    COLLABORATION
+                  </p>
+                  <h1
+                    class="xxs:text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold leading-tight"
+                  >
+                    NATIVE UNION X TOM DIXON
+                  </h1>
+                  <div class="font-medium text-neutral-900 mb-8">
+                    <button
+                      class="sm:w-1/3 w-1/2 p-3 bg-secoundary-color relative after:content-[''] after:absolute after:bg-black after:opacity-10 after:bottom-0 overflow-hidden after:left-0 after:right-0 after:top-0 inline-block me-2 after:transform after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-500"
+                    >
+                      LEARN MORE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide4 relative w-full h-full cursor-pointer">
+                <div class="flex w-full h-full">
+                  <div class="slide4-1 h-full lg:w-1/2 w-full"></div>
+                  <div class="slide4-2 h-full w-1/2 hidden lg:block"></div>
+                </div>
+                <div
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center md:w-4/5 xl:w-1/2 lg:w-3/5 w-full md:p-20 sm:p-10 p-5 gap-10 flex flex-col"
+                >
+                  <p class="text-xs font-semibold font-text-font">
+                    CHARGE ANYWHERE, ANYTIME
+                  </p>
+                  <h1
+                    class="xxs:text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold leading-tight text-neutral-100"
+                  >
+                    NEW JUMP + POWERBANK
+                  </h1>
+                  <div class="font-medium text-neutral-900 mb-9">
+                    <button
+                      class="sm:w-1/3 w-1/2 p-3 bg-secoundary-color relative after:content-[''] after:absolute after:bg-black after:opacity-10 after:bottom-0 overflow-hidden after:left-0 after:right-0 after:top-0 inline-block me-2 after:transform after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-500"
+                    >
+                      SHOP JUMP +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="slide5 w-full h-full cursor-pointer flex flex-col justify-center md:block"
+              >
+                <div
+                  class="md:w-4/5 xl:w-1/2 lg:w-2/3 w-full md:p-20 xs:p-16 xxs:py-20 xxs:px-5 flex flex-col gap-10 sm:w-11/12"
+                >
+                  <p class="text-xs font-semibold font-text-font">NEW IN</p>
+                  <h1
+                    class="xxs:text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold leading-tight"
+                  >
+                    THE MAISON KITSUNE COLLAB
+                  </h1>
+                  <div class="font-medium text-neutral-900 mb-8 flex gap-x-4">
+                    <button
+                      class="sm:w-1/3 w-1/2 p-3 bg-secoundary-color relative after:content-[''] after:absolute after:bg-black after:opacity-10 after:bottom-0 overflow-hidden after:left-0 after:right-0 after:top-0 inline-block me-2 after:transform after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-500"
+                    >
+                      LEARN MORE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination md:p-8 sm:p-5 p-3"></div>
+        </div>
+      </div>
+    </header>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

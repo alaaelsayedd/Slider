@@ -1,0 +1,131 @@
+.card:hover img {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.swiper {
+  height: 580px;
+  width: 100%;
+}
+.swiper-slide {
+  width: 100%;
+
+}
+
+.swiper-pagination-bullet {
+  width: 70px !important;
+  border-radius: 2px !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -ms-border-radius: 2px !important;
+  -o-border-radius: 2px !important;
+  height: 2.2px !important;
+  margin-inline: 10px !important;
+}
+.swiper-pagination-bullet-active {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.151) !important;
+}
+.swiper-pagination-bullet-active::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.651);
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  animation: progress 5000ms forwards;
+  -webkit-animation: progress 3000ms forwards ease-in-out;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.silde1-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/heritage-lp-3.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.slide2-1 {
+  background-image: url("../images/sage1-desktop.webp");
+
+  background-position: center;
+  background-size: cover;
+}
+.slide2-2 {
+  background-image: url("../images/sage2-desktop.webp");
+
+  background-position: center;
+  background-size: cover;
+}
+.silde3 {
+  background-image: url("../images/tom-dixon-lp-tile-1.webp");
+  background-position: center;
+  background-size: cover;
+}
+.slide4-1 {
+  background-image: url("../images/jump1-desktop.webp");
+  background-position: center;
+  background-size: cover;
+}
+.slide4-2 {
+  background-image: url("../images/jump2-desktop.webp");
+  background-position: center;
+  background-size: cover;
+}
+.slide5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.171)),
+    url("../images/mk-lp-tile-1.webp");
+  background-size: cover;
+  background-position: center;
+}
+.sidebar {
+  left: 0;
+}
+.plus {
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+}
+.rotate-plus {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+}
+.rotate-mince {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+}
+@media only screen and (max-width: 420px) {
+  .swiper-pagination-bullet {
+    width: 38px !important;
+   
+  }
+}
+@media only screen and (max-width: 620px) {
+  .swiper-pagination-bullet {
+    width: 49px !important;
+   
+  }
+}
