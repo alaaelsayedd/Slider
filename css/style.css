@@ -122,6 +122,9 @@
     width: 38px !important;
    
   }
+  .swiper {
+    height: 100vh;
+  }
 }
 @media only screen and (max-width: 620px) {
   .swiper-pagination-bullet {
